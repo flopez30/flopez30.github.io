@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+       
+
+        <meta charset="UTF-8">
+
+        <title>Encriptador</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+        
+    </head>
+       
+    <header>
+        <div class="logo">
+            <h1>
+                <img src="Vector.png" alt="Logo Alura">
+            </h1>
+            
+        </div>
+
+        <h2>
+            Encriptador de Texto
+        </h2>
+
+        <h3>By:   Felipe López</h3>
+
+    </header>
+
+    <body>
+        
+        <form id="formulario">
+            <input type="text" placeholder="Ingrese el texto aqui" class="entrada" id="entrada1">
+        </form>
+
+        
+        <div> <h6> <img src="imagenes/Vector.png"> solo letras minusculas y sin acentos</h6> </div>
+
+        <script type="text/javascript">
+            function proceso_encriptar(){
+                if (document.getElementById("entrada1").value  == ("")) {
+                    location.reload();
+                }
+                else
+                var texto = document.getElementById("entrada1").value;
+                var txtCifrado = texto.replace(/e/igm,"enter");
+                var txtCifrado =  txtCifrado.replace(/o/igm,"ober");
+                var txtCifrado =  txtCifrado.replace(/i/igm,"imes");
+                var txtCifrado =  txtCifrado.replace(/a/igm,"ai");
+                var txtCifrado =  txtCifrado.replace(/u/igm,"ufat");
+                document.getElementById("resultado").innerHTML = txtCifrado;
+                formulario.reset();
+            }
+
+            function proceso_desencriptar(){
+                if (document.getElementById("entrada1").value  == ("")) {
+                    location.reload();
+                }
+                var texto = document.getElementById("entrada1").value;
+                var txtCifrado = texto.replace(/enter/igm,"e");
+                var txtCifrado = txtCifrado.replace(/ober/igm,"o");
+                var txtCifrado = txtCifrado.replace(/imes/igm,"i");
+                var txtCifrado = txtCifrado.replace(/ai/igm,"a");
+                var txtCifrado = txtCifrado.replace(/ufat/igm,"u");
+                document.getElementById("resultado").innerHTML = txtCifrado;
+                formulario.reset();
+            }
+
+            function proceso_copiar(){
+                                var content = document.getElementById('resultado').innerHTML;
+
+                navigator.clipboard.writeText(content)
+                    .then(() => {
+                    alert("Texto copiado al portapapeles")
+                })
+                    .catch(err => {
+                    alert('Something went wrong', err);
+                })
+
+              
+            }
+                 
+
+            
+    </script>
+
+        <div class="contenedor">
+            <button  onclick="proceso_encriptar()" class="encriptar">Encriptar</button>
+            <button  onclick="proceso_desencriptar()"  class="desencriptar">Desencriptar</button>
+
+
+
+
+        </div>
+         
+        <div class="cuadrado-2">
+           <p id="resultado"> <img src="imagenes/Muñeco.png">Ningún mensaje fué encontrado <h4>ingresa el texto que deseas encriptar o <br> desencriptar</h4> </p>
+           <button onclick="proceso_copiar()" class="copiar">Copiar</button>
+        </div>
+
+
+    </body>
+

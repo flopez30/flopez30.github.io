@@ -1,0 +1,180 @@
+
+header{
+    padding: 50px;
+}
+
+h2{
+    text-align: justify;
+    font-size: 35px;
+    margin-bottom: 0%;
+    color: rgb(6, 6, 88);
+}
+
+
+h3{
+    font-size: 20px;
+    color: rgb(6, 6, 88);
+    font-style: italic;
+}
+
+body{
+    zoom: 75%;
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    
+    background: #E5E5E5;
+}
+
+.entrada{
+    border-radius: 10px;
+    
+position: absolute;
+width: 577px;
+height: 48px;
+left: 240px;
+top: 300px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+
+}
+
+h6{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 600px;
+
+    width: 205px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 700px; 
+}
+.encriptar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+    background: #0A3871;
+    border: none;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.desencriptar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(22, 60, 110);
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+.cuadrado-2 {
+    position: absolute;
+    width: 400px;
+    height: 750px;
+    left: 1000px;
+    top: 40px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+    /* shadow */
+    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#resultado{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    word-wrap: break-word;
+}
+
+h4{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: serif;
+}
+
+.copiar{
+    
+    margin: 17%;
+    width: 70%;
+    padding: 15px 0 ;
+    font-size: 18px;
+    color: rgb(22, 60, 110);
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    
+    
+    transition: 1s all;
+    cursor: pointer;
+}
